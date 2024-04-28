@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { account, ID } from '../../../lib/appwrite';
 import { ServiceService } from '../services/service.service';
 import { Router } from '@angular/router';
-
+import { NgxSpinnerService } from "ngx-spinner";
 import Swal from 'sweetalert2';
 
 @Component({
@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 })
 export class SigninComponent {
 
-  constructor(private mainService: ServiceService, private router: Router) { }
+  constructor(private mainService: ServiceService, private router: Router, private spinner: NgxSpinnerService) { }
 
 
 
@@ -24,7 +24,6 @@ export class SigninComponent {
     if (this.erpUser.id) {
       console.log('alreday login');
       this.router.navigateByUrl('#')
-
     }
   }
 
@@ -38,7 +37,7 @@ export class SigninComponent {
     obj.email = this.userEmail
     obj.password = this.userPword
 
-
+    this.spinner.show();
     let resp: any = await this.mainService.loginUser(JSON.stringify(obj))
     if (resp['error'] == false) {
       try {
@@ -51,17 +50,22 @@ export class SigninComponent {
 
           localStorage.setItem('1001', btoa(JSON.stringify(setItem)));
           localStorage.removeItem('cookieFallback')
-
+          this.spinner.hide();
           Swal.fire('Success', 'Login Succesfully!', 'success');
+          this.router.navigateByUrl('seller')
+
           return
         } else {
+          this.spinner.hide();
           console.log('Something went wrong !!!!')
         }
       } catch (error) {
+        this.spinner.hide();
         console.log('Login field Failed =>', error)
         return
       }
     } {
+      this.spinner.hide();
       Swal.fire('warning', resp['data'], 'warning');
       return
     }
