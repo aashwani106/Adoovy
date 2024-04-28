@@ -10,11 +10,11 @@ export class SellerLayoutComponent {
   constructor(private spinner: NgxSpinnerService) {}
 
   ngOnInit() {
-    this.spinner.show();
+    // this.spinner.show();
 
-    setTimeout(() => {
-      this.spinner.hide();
-    }, 5000);
+    // setTimeout(() => {
+    //   this.spinner.hide();
+    // }, 5000);
   }
 
 

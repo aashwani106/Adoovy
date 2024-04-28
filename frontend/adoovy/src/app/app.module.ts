@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SellerLayoutComponent } from './seller/seller-layout/seller-layout.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { SellerSidebarComponent } from './seller/seller-layout/seller-sidebar/seller-sidebar.component';
 
 
 @NgModule({
@@ -17,6 +18,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppComponent,
     SigninComponent,
     SellerLayoutComponent,
+    SellerSidebarComponent
+
   ],
   imports: [
     BrowserModule,
