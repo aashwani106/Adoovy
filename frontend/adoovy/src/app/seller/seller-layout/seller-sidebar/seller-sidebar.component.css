@@ -1,6 +1,7 @@
+/* Sidebar */
 .sidebar {
   height: 100%;
-  width: 250px;
+  width: 200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,26 +9,31 @@
   padding-top: 20px;
 }
 
-.sidebar h2 {
-  color: #fff;
-  text-align: center;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  padding: 8px;
-  text-align: center;
-}
-
-.sidebar ul li a {
-  color: #fff;
+/* Sidebar links */
+.sidebar a {
+  padding: 10px;
   text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
 }
 
-.sidebar ul li a:hover {
-  color: #f1f1f1;
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  color: #fff;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
 }
