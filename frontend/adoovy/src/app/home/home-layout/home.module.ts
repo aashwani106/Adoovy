@@ -22,7 +22,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     RouterModule,
     homeLayoutRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     NgxSpinnerModule,
   ]
 })

@@ -15,9 +15,9 @@ export class AppComponent {
   async ngOnInit() {
     this.erpUser = JSON.parse(atob(localStorage.getItem('1001') as any));
     console.log('user==>', this.erpUser)
-    if (this.erpUser.id) {
-      console.log('alreday login');
-      this.router.navigateByUrl('seller')
+    if (!this.erpUser.id) {
+      console.log('not login');
+      this.router.navigateByUrl('')
     }
   }
 }

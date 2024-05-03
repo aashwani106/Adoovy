@@ -7,6 +7,7 @@ import { SellerLayoutComponent } from './seller-layout.component';
 import { SellerLayoutRoutingModule } from './seller-layout-routing.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { SellerDashboardComponent } from '../seller-dashboard/seller-dashboard.component';
+import { SellerWebsitesComponent } from '../seller-websites/seller-websites.component';
 // import { SellerSidebarComponent } from './seller-layout/seller-sidebar/seller-sidebar.component';
 
 
@@ -18,7 +19,7 @@ import { SellerDashboardComponent } from '../seller-dashboard/seller-dashboard.c
     SellerSidebarComponent,
     SellerLayoutComponent,
     SellerDashboardComponent,
-
+    SellerWebsitesComponent
   ],
   imports: [
     CommonModule,

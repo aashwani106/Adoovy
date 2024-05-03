@@ -8,7 +8,7 @@ import { BuyerLayoutComponent } from './buyer/buyer-layout/buyer-layout.componen
 import { SellerLayoutComponent } from './seller/seller-layout/seller-layout.component';
 
 const routes: Routes = [
-  { path: " ", component: HomeLayoutComponent, loadChildren: () => import('./home/home-layout/home.module').then(m => m.HomeModule) },
+  { path: "", component: HomeLayoutComponent, loadChildren: () => import('./home/home-layout/home.module').then(m => m.HomeModule) },
   { path: "buyer", component: BuyerLayoutComponent, loadChildren: () => import('./buyer/buyer-layout/buyer.module').then(m => m.BuyerModule) },
   { path: "seller", component: SellerLayoutComponent, loadChildren: () => import('./seller/seller-layout/seller.module').then(m => m.SellerModule) },
 

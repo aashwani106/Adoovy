@@ -6,10 +6,10 @@ import { SellerWebsitesComponent } from '../seller-websites/seller-websites.comp
 
 
 const routes: Routes = [
-  {path: "",component: SellerDashboardComponent},
-  {path: "websites",component: SellerWebsitesComponent},
+  { path: "", component: SellerDashboardComponent },
+  { path: "websites", component: SellerWebsitesComponent },
 
-  
+
 ];
 
 @NgModule({
