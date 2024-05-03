@@ -6,7 +6,7 @@ import { SellerWebsitesComponent } from '../seller-websites/seller-websites.comp
 
 
 const routes: Routes = [
-  { path: "", component: SellerDashboardComponent },
+  { path: "seller-index", component: SellerDashboardComponent },
   { path: "websites", component: SellerWebsitesComponent },
 
 
@@ -14,6 +14,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class SellerLayoutRoutingModule { }
