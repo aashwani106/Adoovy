@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// @ts-ignore
 import { account, ID } from '../../../lib/appwrite';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../services/service.service';

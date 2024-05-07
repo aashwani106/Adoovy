@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SellerLayoutComponent } from './seller-layout.component';
-
+import { AddWebsiteComponent } from './add-website/add-website.component'; // Make sure to add .component
 
 const routes: Routes = [
-  {path: "",component: SellerLayoutComponent},
+  { path: '', component: SellerLayoutComponent },
 ];
 
 @NgModule({

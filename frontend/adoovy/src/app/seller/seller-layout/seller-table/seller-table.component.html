@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row mb-3">
+    <div class="col">
+      <button class="btn btn-primary float-right" (click)="openPopup()">Add Website</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">SerialNo.</th>
+            <th scope="col">WebsiteURL</th>
+            <th scope="col">WebsiteOwner</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let website of websites let i = index">
+            <td>{{ i+1 }}</td>
+            <td>{{ website.website }}</td>
+            <td>{{ website.websiteowner }}</td>
+            <td>{{ website.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

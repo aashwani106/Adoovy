@@ -1,0 +1,30 @@
+<div class="container my-5" id="formBody">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-primary text-white py-4">
+                    <h2 class="mb-0 text-center fs-4">Add Website</h2>
+                </div>
+                <div class="card-body p-5">
+                    <form (submit)="submitForm()">
+                        <div class="mb-4">
+                            <label for="url" class="form-label fs-5">Website URL:</label>
+                            <input type="text" class="form-control form-control-lg fs-5" id="url" name="url" placeholder="Enter website URL" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="status" class="form-label fs-5">Status:</label>
+                            <select class="form-select form-select-lg fs-5" id="status" name="status" required>
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="d-grid gap-3">
+                            <button type="submit" class="btn btn-primary btn-lg fs-5">Okay</button>
+                            <button type="button" class="btn btn-secondary btn-lg fs-5" (click)="goBack()">Go Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

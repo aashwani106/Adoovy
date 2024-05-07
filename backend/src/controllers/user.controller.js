@@ -20,10 +20,11 @@ const registerUser = asyncHandler(async (req, res) => {
   } else {
     res.status(500).json({
       error: false,
-      data: "Something went wronf",
+      data: "Something went wrong",
     });
   }
 });
+
 
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = JSON.parse(req.params.dtls);

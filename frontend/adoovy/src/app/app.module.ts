@@ -11,6 +11,9 @@ import { SellerLayoutComponent } from './seller/seller-layout/seller-layout.comp
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { SellerSidebarComponent } from './seller/seller-layout/seller-sidebar/seller-sidebar.component';
+import { SellerTableComponent } from './seller/seller-layout/seller-table/seller-table.component';
+import { AddWebsiteComponent } from './seller/seller-layout/add-website/add-website.component';
+
 
 
 @NgModule({
@@ -18,7 +21,8 @@ import { SellerSidebarComponent } from './seller/seller-layout/seller-sidebar/se
     AppComponent,
     SigninComponent,
     SellerLayoutComponent,
-    SellerSidebarComponent
+    SellerSidebarComponent,
+    SellerTableComponent,
 
   ],
   imports: [
